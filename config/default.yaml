@@ -1,0 +1,18 @@
+model:
+  type: classifier       # classifier or detector
+  input_channels: 3
+  num_classes: 10
+  cnn_blocks: [32, 64]   # Channels in each conv block
+  kernel_size: 3
+  use_batchnorm: true
+  use_dropout: true
+  dropout_prob: 0.25
+
+training:
+  batch_size: 64
+  epochs: 20
+  lr: 0.001
+  optimizer: adam
+  loss: cross_entropy     # or detection_loss
+  device: cpu
+  save_path: checkpoints/model.pt
