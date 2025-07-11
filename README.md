@@ -23,3 +23,18 @@ cnn_project/
 └── README.md # You're here
 
 python main.py --config config/default.yaml
+
+Typical one  CNN block 
+
+[Input Image or Feature Map]
+        ↓
+Convolution Layer (with kernels/filters)
+        ↓
+Activation Function (ReLU)
+        ↓
+(Optional: BatchNorm)
+        ↓
+(Optional: Pooling Layer — like MaxPool)
+        ↓
+[Output Feature Map → sent to next block]
+
